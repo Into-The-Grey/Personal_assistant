@@ -1,0 +1,88 @@
+[
+    {
+        "label": "AutoModelForCausalLM",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoModelForCausalLM",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "model_name",
+        "kind": 5,
+        "importPath": "src.download_model",
+        "description": "src.download_model",
+        "peekOfCode": "model_name = \"microsoft/phi-2\"\nsave_directory = \"./models/phi-2\"  # Update this path to your desired save location\n# Download and save tokenizer\ntokenizer = AutoTokenizer.from_pretrained(model_name)\ntokenizer.save_pretrained(save_directory)\n# Download and save model\nmodel = AutoModelForCausalLM.from_pretrained(model_name)\nmodel.save_pretrained(save_directory)",
+        "detail": "src.download_model",
+        "documentation": {}
+    },
+    {
+        "label": "save_directory",
+        "kind": 5,
+        "importPath": "src.download_model",
+        "description": "src.download_model",
+        "peekOfCode": "save_directory = \"./models/phi-2\"  # Update this path to your desired save location\n# Download and save tokenizer\ntokenizer = AutoTokenizer.from_pretrained(model_name)\ntokenizer.save_pretrained(save_directory)\n# Download and save model\nmodel = AutoModelForCausalLM.from_pretrained(model_name)\nmodel.save_pretrained(save_directory)",
+        "detail": "src.download_model",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "src.download_model",
+        "description": "src.download_model",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name)\ntokenizer.save_pretrained(save_directory)\n# Download and save model\nmodel = AutoModelForCausalLM.from_pretrained(model_name)\nmodel.save_pretrained(save_directory)",
+        "detail": "src.download_model",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.download_model",
+        "description": "src.download_model",
+        "peekOfCode": "model = AutoModelForCausalLM.from_pretrained(model_name)\nmodel.save_pretrained(save_directory)",
+        "detail": "src.download_model",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "src.load_model",
+        "description": "src.load_model",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(\"./models/phi-2\")\nmodel = AutoModelForCausalLM.from_pretrained(\"./models/phi-2\")",
+        "detail": "src.load_model",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "src.load_model",
+        "description": "src.load_model",
+        "peekOfCode": "model = AutoModelForCausalLM.from_pretrained(\"./models/phi-2\")",
+        "detail": "src.load_model",
+        "documentation": {}
+    }
+]
