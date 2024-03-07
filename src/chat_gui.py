@@ -10,7 +10,7 @@ class ChatWindow(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.layout = QVBoxLayout()
+        layout = QVBoxLayout()  # Create the layout
 
         self.chatHistory = QTextEdit()
         self.chatHistory.setReadOnly(True)
@@ -19,11 +19,12 @@ class ChatWindow(QWidget):
         self.sendButton = QPushButton("Send")
         self.sendButton.clicked.connect(self.sendMessage)
 
-        self.layout.addWidget(self.chatHistory)
-        self.layout.addWidget(self.messageInput)
-        self.layout.addWidget(self.sendButton)
+        # Add widgets to the layout instead of setting it directly as an attribute
+        layout.addWidget(self.chatHistory)
+        layout.addWidget(self.messageInput)
+        layout.addWidget(self.sendButton)
 
-        self.setLayout(self.layout)
+        self.setLayout(layout)  # Use setLayout to apply the layout to the widget
         self.setWindowTitle("Chat with Phi-2")
 
     def sendMessage(self):

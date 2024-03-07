@@ -93,7 +93,7 @@
         "kind": 6,
         "importPath": "src.chat_gui",
         "description": "src.chat_gui",
-        "peekOfCode": "class ChatWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.initUI()\n    def initUI(self):\n        self.layout = QVBoxLayout()\n        self.chatHistory = QTextEdit()\n        self.chatHistory.setReadOnly(True)\n        self.messageInput = QLineEdit()\n        self.sendButton = QPushButton(\"Send\")",
+        "peekOfCode": "class ChatWindow(QWidget):\n    def __init__(self):\n        super().__init__()\n        self.initUI()\n    def initUI(self):\n        layout = QVBoxLayout()  # Create the layout\n        self.chatHistory = QTextEdit()\n        self.chatHistory.setReadOnly(True)\n        self.messageInput = QLineEdit()\n        self.sendButton = QPushButton(\"Send\")",
         "detail": "src.chat_gui",
         "documentation": {}
     },
